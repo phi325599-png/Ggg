@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FERD VIP MENU</title>
+    <style>
+        /* รีเซ็ตค่าเริ่มต้นและตั้งธีมมืด */
+        body { 
+            background-color: #0b0b0b; 
+            color: #ffffff; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        /* กล่องเมนูหลักสไตล์โมบาย */
+        .menu-container {
+            width: 100%;
+            max-width: 414px;
+            min-height: 100vh;
+            background-color: #000000;
+            border-top: 3px solid #ff2a2a;
+            box-sizing: border-box;
+            padding-bottom: 30px;
+        }
+
+        /* หัวข้อด้านบนสุด */
+        .header {
+            padding: 20px 20px 10px 20px;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #444444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 5px 0 0 0;
+            letter-spacing: 1px;
+        }
+
+        /* โซนโปรไฟล์ผู้ใช้งาน */
+        .profile-section {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #0a0a0a;
+            border-bottom: 1px solid #151515;
+            margin-bottom: 15px;
+        }
+        /* รูปภาพโปรไฟล์ทรงกลม */
+        .profile-avatar {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            border: 2px solid #222;
+            object-fit: cover;
+            margin-right: 15px;
+            background-color: #111;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+        /* แถบสถานะเวลาด้านล่างโปรไฟล์ */
+        .profile-status-bar {
+            margin-top: 12px;
+            height: 3px;
+            background: #ff2a2a;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        /* แถบหมวดหมู่คงเหลือ */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #111;
+            margin-bottom: 20px;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 13px;
+            color: #ff2a2a;
+            letter-spacing: 1px;
+            font-weight: 500;
+            border-bottom: 2px solid #ff2a2a;
+        }
+
+        /* รายการฟังก์ชันการทำงาน */
+        .function-box {
+            background-color: #0c0c0c;
+            margin: 0 15px 12px 15px;
+            padding: 16px 20px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #121212;
+        }
+        .function-name {
+            font-size: 16px;
+            font-weight: 500;
+            color: #dddddd;
+        }
+        .function-status {
+            font-size: 12px;
+            color: #555555;
+            margin-top: 4px;
+        }
+
+        /* ปุ่มสวิตช์เปิด-ปิดแบบ iOS Toggle */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 46px;
+            height: 26px;
+        }
+        .switch input { 
+            opacity: 0; width: 0; height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #252525;
+            transition: .3s;
+            border-radius: 26px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 3px;
+            bottom: 3px;
+            background-color: #ffffff;
+            transition: .3s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #ff2a2a;
+        }
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <div class="header">
+        <p class="subtitle">Script Table</p>
+        <h1 class="title">โปร FF เวอร์ชั่นกินเห็ด</h1>
+    </div>
+
+    <div class="profile-section">
+        <img class="profile-avatar" src="https://i.ibb.co/dsftCbzD/IMG-3692.jpg" alt="Profile">
+        <div class="profile-info">
+            <span class="profile-name">ผู้สร้าง@ferdvip</span>
+            <div class="profile-status-bar"></div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <div class="tab">เมนูใช้งานคะ</div>
+    </div>
+
+    <div class="function-box">
+        <div class="function-info">
+            <div class="function-name">วาร์ปไปหาเห็ด</div>
+            <div class="function-status" id="status1">ปิดใช้งาน</div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleFunction('status1', this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="function-box">
+        <div class="function-info">
+            <div class="function-name">กินเห็ดอัตโนมัติ</div>
+            <div class="function-status" id="status2">ปิดใช้งาน</div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleFunction('status2', this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="function-box">
+        <div class="function-info">
+            <div class="function-name">EPS หาเห็ด</div>
+            <div class="function-status" id="status3">ปิดใช้งาน</div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleFunction('status3', this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="function-box">
+        <div class="function-info">
+            <div class="function-name">ขี่โคยอัตโนมัติ</div>
+            <div class="function-status" id="status4">ปิดใช้งาน</div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleFunction('status4', this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="function-box">
+        <div class="function-info">
+            <div class="function-name">เด้าโคย56</div>
+            <div class="function-status" id="status5">ปิดใช้งาน</div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleFunction('status5', this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+</div>
+
+<script>
+    // ตรรกะควบคุมสวิตช์เปิด-ปิดการทำงาน
+    function toggleFunction(id, element) {
+        const statusText = document.getElementById(id);
+        if(element.checked) {
+            statusText.innerText = "เปิดใช้งานอยู่";
+            statusText.style.color = "#ff2a2a";
+        } else {
+            statusText.innerText = "ปิดใช้งาน";
+            statusText.style.color = "#555555";
+        }
+    }
+</script>
+
+</body>
+</html>
