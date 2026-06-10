@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.EN">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>Icon</key>
+            <data>
+            /9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+            AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+            AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+            AQEBAQEB/8AAEQgAQwBDAwERAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAAB
+            AgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQci
+            cRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElK
+            U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeo
+            qaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29f35
+            +v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQH
+            BQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDTh
+            JfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5
+            eoKDhIWGheightiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS
+            09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29f35+v/aAAwDAQACE MEMBERShip/9oA
+            AMBAEK3/2gAMAwEAPwD+/igAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKAC
+            gAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACg
+            AoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgA
+            oAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoA//Z
+            </data>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>FERD VIP MENU</string>
+            <key>PayloadDescription</key>
+            <string>ติดตั้งโปรไฟล์เพื่อใช้งานหน้าเมนูโปร Free Fire เวอร์ชั่นกินเห็ด</string>
+            <key>PayloadDisplayName</key>
+            <string>FERD VIP MENU</string>
+            <key>PayloadIdentifier</key>
+            <string>com.ferdvip.menu.webclip</string>
+            <key>PayloadOrganization</key>
+            <string>FERD MOD</string>
+            <key>PayloadType</key>
+            <string>com.apple.webclip.managed</string>
+            <key>PayloadUUID</key>
+            <string>A5B2C3D4-E5F6-7A8B-9C0D-E1F2A3B4C5D6</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>URL</key>
+            <string>https://ferd-proxy-menu.onrender.com</string>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>โปรไฟล์ทางลัดสำหรับเปิดหน้าเมนูโปร FERD VIP</string>
+    <key>PayloadDisplayName</key>
+    <string>FERD VIP MENU PROFILE</string>
+    <key>PayloadIdentifier</key>
+    <string>com.ferdvip.profile</string>
+    <key>PayloadOrganization</key>
+    <string>FERD MOD</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>12345678-9ABC-DEF0-1234-56789ABCDEF0</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
